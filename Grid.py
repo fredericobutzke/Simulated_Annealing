@@ -7,8 +7,8 @@ class Grid():
 	def getGrid(self):
 		return self.grid
 
-	def addCell(self, cell, x, y):
-		self.grid[cell] = [x, y]
+	def addCell(self, cell, pos):
+		self.grid[cell] = pos
 
-	def updateCell(self, cell, x, y):
-		self.grid[cell] = [x, y]
+	def updateCell(self, cell, pos):
+		self.grid[cell] = pos

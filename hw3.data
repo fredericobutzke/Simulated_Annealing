@@ -1,7 +1,5 @@
 .grid 
 3 3
-.cells
-c9 3 3
 .netlist
 c9 c8
 c3 c8
@@ -10,4 +8,6 @@ c4 c3
 c5 c3
 c7 c6
 c2 c8
+.cells
+c9 3 3
 .end
