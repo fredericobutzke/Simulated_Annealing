@@ -35,6 +35,9 @@ def genNeighbor(cells) :
 	if unfixedcells == [c for c in unfixedcells if c.getStatus() is 'moved'] or len([c for c in unfixedcells if c.getStatus() is 'free']) == 1 :
 		map(lambda c : c.setStatus('free'), [c for c in unfixedcells])
 
+	else :
+		unfixedcells = [c for c in unfixedcells if c.getStatus() is 'free']
+		
 	c1, c2 = random.sample(unfixedcells, 2)
 	c1.setStatus('moved')
 	c2.setStatus('moved')
@@ -46,3 +49,7 @@ def genNeighbor(cells) :
 	c2.setY(ty) 
 
 	return cells
+
+def cost(cells, nets) :
+
+	return 0
