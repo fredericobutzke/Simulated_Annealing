@@ -18,7 +18,3 @@ printCells()
 
 cells = Utilities.genInitialGrid(cells, width, height) 
 printCells()
-
-while(raw_input() != 'exit') :
-	cells = Utilities.genNeighbor(cells)
-	printCells()
