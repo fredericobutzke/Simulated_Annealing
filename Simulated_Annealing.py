@@ -18,3 +18,7 @@ printCells()
 
 cells = Utilities.genInitialGrid(cells, width, height) 
 printCells()
+
+cells = Utilities.genNeighbor(cells)
+
+Utilities.cost(cells, nets)

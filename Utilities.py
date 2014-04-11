@@ -37,7 +37,7 @@ def genNeighbor(cells) :
 
 	else :
 		unfixedcells = [c for c in unfixedcells if c.getStatus() is 'free']
-		
+
 	c1, c2 = random.sample(unfixedcells, 2)
 	c1.setStatus('moved')
 	c2.setStatus('moved')
@@ -51,5 +51,10 @@ def genNeighbor(cells) :
 	return cells
 
 def cost(cells, nets) :
-
-	return 0
+	total_wirelength = 0
+	for net in nets.getNets() :
+		c1 = cells[int(net[0])-1]
+		c2 = cells[int(net[1])-1]
+		#print c1.getNumber(), c2.getNumber()
+		total_wirelength += abs(c1.getX() - c2.getX()) + abs(c1.getY() - c2.getY())
+	return total_wirelength
