@@ -10,16 +10,19 @@ The algorithm is based on Simulated Annealing.
 *	Running the project:
 python Simulated_Annealing.py -i hw3.data -t 10 -a .9 -b 1 -m 10 -x .5
 
-Where, 
+Where,  
+ 
 -i inputfile  
--t initial temperature  
--a cooling rate, alpha
+  
+-t initial temperature    
+-a cooling rate, alpha  
+
 -b constant, beta  
-
+  
 -m time until next parameter update in Metropolis function  
-
+  
 -x the value t should be to finish the execution  
-
+  
 -h help 
 
 
