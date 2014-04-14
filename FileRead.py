@@ -2,7 +2,7 @@ from Net import Nets
 from Cell import Cell
 
 class FileRead():
-	"This class read the data input file"
+	"This class reads the data input file"
 	def __init__ (self, file_name, permission) :
 		fo = open(file_name, permission)
 		self.lines = fo.readlines()

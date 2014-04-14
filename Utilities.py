@@ -55,6 +55,5 @@ def cost(cells, nets) :
 	for net in nets.getNets() :
 		c1 = cells[int(net[0])-1]
 		c2 = cells[int(net[1])-1]
-		#print c1.getNumber(), c2.getNumber()
 		total_wirelength += abs(c1.getX() - c2.getX()) + abs(c1.getY() - c2.getY())
 	return total_wirelength
