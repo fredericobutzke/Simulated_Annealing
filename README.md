@@ -14,7 +14,8 @@ Where,
  
 -i inputfile  
   
--t initial temperature    
+-t initial temperature  
+    
 -a cooling rate, alpha  
 
 -b constant, beta  
