@@ -11,8 +11,8 @@ The algorithm is based on Simulated Annealing.
 python Simulated_Annealing.py -i hw3.data -t 10 -a .9 -b 1 -m 10 -x .5
 
 Where, 
--i <inputfile>
--t <initial temperature>
+"-i <inputfile>"
+"-t <initial temperature>"
 -a <cooling rate, alpha>
 -b <constant, beta>
 -m <time until next parameter update in Metropolis function>
