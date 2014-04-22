@@ -8,7 +8,7 @@ The algorithm is based on Simulated Annealing.
 
 ##	Input
 *	Running the project:
-python Simulated_Annealing.py -i hw3.data -t 10 -a .9 -b 1 -m 10 -x .5
+./Simulated_Annealing.py -i hw3.data -t 10 -a .9 -b 1 -m 10 -x .5
 
 Where,  
  
